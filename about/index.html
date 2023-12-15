@@ -85,17 +85,6 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/publish" class="waves-effect waves-light">
-      
-      <i class="fas fa-pen-to-square" style="zoom: 0.6;"></i>
-      
-      <span>发布</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/tags" class="waves-effect waves-light">
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
@@ -196,17 +185,6 @@
 			    <i class="fa-fw fas fa-home"></i>
 			
 			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/publish" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-pen-to-square"></i>
-			
-			发布
 		</a>
           
         </li>
@@ -423,16 +401,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">1</a></span>
+    <span class="name">分类</span>
+</div>
+
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">1</a></span>
+    <span class="count"><a href="/tags">2</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -448,16 +431,21 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">1</a></span>
+    <span class="name">分类</span>
+</div>
+
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">1</a></span>
+    <span class="count"><a href="/tags">2</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -593,7 +581,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,2],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,3],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -635,7 +623,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"信息发布","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -659,7 +647,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["myfirstpage"]
+                data: ["myfirstpage","信息发布"]
             }
         ],
         yAxis: [
@@ -672,7 +660,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [1],
+                data: [1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -792,6 +780,12 @@
             
             <a href="/tags/myfirstpage/">
                 <span class="chip center-align waves-effect waves-light chip-default">myfirstpage</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%8F%91%E5%B8%83/">
+                <span class="chip center-align waves-effect waves-light chip-default">信息发布</span>
             </a>
             
             
